@@ -19,7 +19,7 @@ header {
   align-items: center;
 }
 
-header>img {
+header > img {
   width: 8em;
   height: 8em;
   border-radius: 100%;
@@ -29,20 +29,20 @@ header>img {
   box-shadow: rgb(195, 132, 59 / 30%) 0px 2px 80px 0px;
 }
 
-header>h1 {
+header > h1 {
   display: inline-block;
   font-size: 1em;
   font-weight: bold;
   border-radius: 1em;
   background-color: #2c2221;
-  color: #b17e68;
+  color: #b49486;
   padding: 0.3em 0.6em;
   border: 2px solid #fffa;
   backdrop-filter: blur(5px) saturate(260%) contrast(180%);
   -webkit-backdrop-filter: blur(5px) saturate(260%) contrast(180%);
 }
 
-header>h2 {
+header > h2 {
   display: inline-block;
   font-size: 1.5em;
   font-weight: bold;
@@ -63,7 +63,7 @@ ul {
   max-width: 480px;
 }
 
-ul>li {
+ul > li {
   background-color: #fffa;
   backdrop-filter: blur(4px) saturate(260%) contrast(180%);
   -webkit-backdrop-filter: blur(4px) saturate(260%) contrast(180%);
@@ -74,7 +74,7 @@ ul>li {
   box-shadow: rgb(195, 132, 59 / 30%) 0px 2px 80px 0px;
 }
 
-ul>li>a {
+ul > li > a {
   display: flex;
   flex-direction: row;
   justify-content: center;
