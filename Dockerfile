@@ -17,4 +17,4 @@ RUN ./mvnw clean package -DskipTests
 EXPOSE 8080
 
 # Executa o .jar gerado
-CMD ["java", "-jar", "MyLinktree-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/MyLinktree-0.0.1-SNAPSHOT.jar"]
