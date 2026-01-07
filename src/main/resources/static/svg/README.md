@@ -1,0 +1,1 @@
+Made with [Gentlecons](https://www.svgrepo.com/collection/gentlecons-interface-icons/) svg pack.
