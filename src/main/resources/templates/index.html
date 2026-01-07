@@ -1,17 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./resources/templates/index.html" rel="stylesheet">
-    <title>filipeyay Linktree</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Filipe Andrade" />
+    <meta
+            name="description"
+            content="Filipe Andrade linktree for social medias and e-mail contact."
+    />
+    <resource href="./resources/static/style.css"></resource>
+    <title>Filipe Andrade Linktree</title>
+
+    <link
+            rel="shortcut icon"
+            th:href="@{/svg/suitcase.svg}"
+            type="image/x-icon"
+    />
+
+    <link th:href="@{/style.css}" rel="stylesheet" />
 </head>
+
 <body>
+<header>
+    <img
+            th:src="@{/images/avatar.png}"
+            alt="filipeyay avatar image"
+    />
 
-<li th:each="link : ${links}">
-    <a th:href="${link.url}" th:text="${link.title}"></a>
-</li>
+    <button id="theme-switch">
+        <img
+                th:src="@{/svg/sun.svg}"
+                alt="sun icon"
+                width="30"
+                height="30"
+        />
+        <img
+                th:src="@{/svg/moon.svg}"
+                alt="moon icon"
+                width="30"
+                height="30"
+        />
+    </button>
 
-<script src="./resources/static/script.js"></script>
+    <h1>@filipe_yay</h1>
+    <h2>I Code Stuff :D</h2>
+</header>
+
+<ul>
+    <li>
+        <a href="mailto:filipeyay@outlook.com">
+            <img
+                    th:src="@{/svg/mail.svg}"
+                    alt="email svg icon"
+                    width="20"
+            />
+            E-mail
+        </a>
+    </li>
+
+    <li>
+        <a href="https://www.github.com/filipeyay/">
+            <img
+                    th:src="@{/svg/github.svg}"
+                    alt="github svg icon"
+                    width="20"
+            />
+            GitHub
+        </a>
+    </li>
+
+    <li>
+        <a href="https://www.linkedin.com/in/filipeyay/">
+            <img
+                    th:src="@{/svg/linkedin.svg}"
+                    alt="linkedin svg icon"
+                    width="20"
+            />
+            LinkedIn
+        </a>
+    </li>
+
+    <li>
+        <a
+                href="https://docs.google.com/document/d/13qTpFXzaQvhr8bt4WrEVT4-qzJjc3Hf3/edit?usp=sharing&ouid=103259850802234798480&rtpof=true&sd=true"
+        >
+            <img
+                    th:src="@{/svg/feedback.svg}"
+                    alt="Curriculum svg icon"
+                    width="20"
+            />
+            Currículo
+        </a>
+    </li>
+</ul>
+
+<script th:src="@{/script.js}" defer></script>
 </body>
 </html>

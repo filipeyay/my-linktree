@@ -10,12 +10,12 @@ html {
 }
 
 body {
-    background: url(./images/BackgroundDark.jpg) no-repeat center center fixed;
+    background: url(./images/background1.png) no-repeat center center fixed;
     background-size: cover;
 }
 
 .lightmode {
-    background: url(./images/BackgroundLight.jpg) no-repeat center center fixed;
+    background: url(./images/background2.png) no-repeat center center fixed;
     background-size: cover;
 }
 
